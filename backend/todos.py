@@ -4,7 +4,7 @@ import database,auth
 
 router = APIRouter(tags=["todos"])
 
-# read all Todos
+# read all from todos
 @router.get('/api/v1/todos',status_code=status.HTTP_200_OK)
 def get_all_todos(limit: Optional[int] = Query(10), offset:Optional[int] = Query(0)) -> List[dict]: 
 	start_idx = int(offset)
