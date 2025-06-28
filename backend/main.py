@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import todos,auth
+import todos, auth
 
 app = FastAPI()
 origins = ['http://localhost:3000']
@@ -13,4 +13,3 @@ app.add_middleware(
 )
 app.include_router(todos.router)
 app.include_router(auth.router)
-app.add_middleware(auth.AuthMiddleware)

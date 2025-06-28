@@ -5,7 +5,6 @@ bcrypt.__about__ = bcrypt
 pwd_context = CryptContext(schemes=["bcrypt"])
 
 def encode(plain_text_password: str) -> str:
-  #return hashlib.md5(plain_text_password.encode('utf-8'),usedforsecurity=True).hexdigest()
   return pwd_context.hash(plain_text_password)
 
 def verify_passwords(plain_text_password: str,encoded_password: str) -> bool:
