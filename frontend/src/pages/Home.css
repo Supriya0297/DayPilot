@@ -1,0 +1,32 @@
+.home-container {
+  width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #f0f9ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 255, 0.2);
+}
+
+h1 {
+  font-size: 32px;
+  color: #1d4ed8;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.get-started {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #dbeafe;
+  border-left: 4px solid #2563eb;
+  font-size: 16px;
+  color: #1e40af;
+}

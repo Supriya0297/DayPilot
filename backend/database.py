@@ -6,7 +6,7 @@ db_config={
     "host":"localhost"
     ,"database":"todos_db"
     ,"username":"root"
-    ,"password":"yourpassword"
+    ,"password":"123456789"
 }
 
 def get_db():

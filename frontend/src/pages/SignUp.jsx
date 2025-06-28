@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SignUp.css'
 import axios from 'axios'; 
 
+axios.defaults.withCredentials = true;
 function SignUp() {
   const [username,setUserName] = useState('');
   const [email,setEmail] = useState('');
@@ -61,14 +62,22 @@ function SignUp() {
 
   return (
       <form action="submit" className='SignUp'>
+        <div className="form-group">
         <label htmlFor="signup_username">UserName</label>
         <input type="text" id = "signup_username" name="signup_username" placeholder='enter username' onChange={(e) => setUserName(e.target.value)}/>
+        </div>
+        <div className="form-group">
         <label htmlFor="signup_email">Email</label>
         <input type="text" id = "signup_email" name="signup_email" placeholder='enter email' onChange={(e) => setEmail(e.target.value)}/>
+        </div>
+        <div className="form-group">
         <label htmlFor="signup_password">Password</label>
         <input type="password" id = "signup_password" name="signup_password" placeholder='enter password' onChange={(e) => setPassword(e.target.value)}/>
+        </div>
+        <div className="form-group">
         <label htmlFor="signup_confirm_password">Confirm Password</label>
         <input type="password" id = "signup_confirm_password" name="signup_confirm_password" placeholder='enter password again' onChange={(e) => setConfirmPassword(e.target.value)}/>
+        </div>
         <p id="signup_error">{error}</p>
         <button id = "signup_btn" type="submit" onClick={(e) => signupHandler(e)}>Sign Up</button>
       </form>

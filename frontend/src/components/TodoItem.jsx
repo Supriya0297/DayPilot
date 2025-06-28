@@ -2,6 +2,7 @@ import IonIcon from '@reacticons/ionicons';
 import React from 'react';
 import './TodoItem.css';
 import { useState } from 'react';
+
 // add(a,b) add(a=1,b-2)
 function TodoItem(props) {
 	console.log(props);

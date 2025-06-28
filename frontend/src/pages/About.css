@@ -1,0 +1,46 @@
+.about-container {
+  width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #e6f0ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 255, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+}
+
+.about-container h1 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.about-container h2 {
+  font-size: 22px;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features-list li {
+  padding: 8px 0;
+  font-size: 15px;
+}
+
+.about-footer {
+  font-size: 14px;
+  color: #444;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}

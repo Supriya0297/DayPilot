@@ -1,0 +1,12 @@
+# building rest apis
+fastapi
+
+# server to run app
+uvicorn
+
+# to connect to backend database
+mysql-connector-python
+
+# securing passwords
+passlib
+bcrypt

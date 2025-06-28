@@ -1,39 +1,71 @@
 .TodoItem {
-	background-color: lightgray;
-	border: 1px solid gray;
-	padding: 2px;
-	margin: 5px;
-	border-radius: 5px;	
-	width: 500px;
-}
-.TodoItem__header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-#delete-todo-btn{
-	background-color: transparent;
-	border: none;
-}
-#delete-todo-img{
-	color: red;
-	font-size: 32px;
+  background: linear-gradient(to right, #dceeff, #f0f8ff);
+  border: 1px solid #8ab6d6;
+  padding: 16px;
+  margin: 12px auto;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#update-todo-btn{
-	background-color: transparent;
-	border: none;
-}
-#update-todo-img{
-	color: beige;
-	font-size: 32px;
+.TodoItem__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-#close-todo-btn{
-	background-color: transparent;
-	border: none;
+.TodoItem__header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #1f4e79;
 }
-#close-todo-img{
-	color: red;
-	font-size: 32px;
+
+.TodoItem__header__actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Button resets */
+#delete-todo-btn,
+#update-todo-btn,
+#close-todo-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Icons */
+#delete-todo-img {
+  color: #e74c3c;
+  font-size: 24px;
+}
+
+#update-todo-img {
+  color: #2980b9;
+  font-size: 24px;
+}
+
+#close-todo-img {
+  color: #c0392b;
+  font-size: 24px;
+}
+
+/* Status input */
+#input__status {
+  margin-top: 8px;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #2980b9;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Description and timestamps */
+.TodoItem p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 0.95rem;
 }

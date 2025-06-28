@@ -39,17 +39,18 @@ function Login(props) {
   }
 
   return (
-    <div className='Login'>
       <form action="submit" className='SignUp'>
+        <div className="form-group">
         <label htmlFor="signin_email">Email</label>
         <input type="text" id = "signin_email" name="signin_email" placeholder='enter email' onChange={(e) => setEmail(e.target.value)}/>
+        </div>
+        <div className="form-group">
         <label htmlFor="signin_password">Password</label>
         <input type="password" id = "signin_password" name="signin_password" placeholder='enter password' onChange={(e) => setPassword(e.target.value)}/>
+        </div>
         <p id="signin_error">{error}</p>
         <button id = "signin_btn" type="submit" onClick={(e) => loginHandler(e)}>Log In</button>
       </form>  
-      
-    </div>
   )
 }
 

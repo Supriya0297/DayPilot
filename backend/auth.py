@@ -5,7 +5,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 
 class AuthMiddleware(BaseHTTPMiddleware):
   async def dispatch(self, request, call_next):
-    if request.url.path in ["/signin","/signup","/docs"]:
+    if request.url.path in ["/signin","/signup","/docs","/openapi.json"]:
       return await call_next(request) # call /signin etc
     cookies = request.cookies
     print(cookies)

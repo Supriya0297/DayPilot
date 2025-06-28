@@ -1,7 +1,13 @@
 .NavBar {
     display: flex;
-    background-color: aquamarine;
-    height: 36px;
+    background-color: rgb(27, 48, 182);
+    height: 50px;
     align-items: center;
     justify-content: space-around;
+    font-size: 25px;
   }
+
+  .NavBar a {
+  text-decoration: none;
+  color: white;
+}
