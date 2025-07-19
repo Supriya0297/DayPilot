@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import todos, auth
 
 app = FastAPI()
+app.add_middleware(auth.AuthMiddleware)
 origins = ['http://localhost:3000']
 app.add_middleware(
     CORSMiddleware,
@@ -13,4 +14,3 @@ app.add_middleware(
 )
 app.include_router(todos.router)
 app.include_router(auth.router)
-app.add_middleware(auth.AuthMiddleware)
